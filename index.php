@@ -8,6 +8,6 @@
 <body>
 Nothing here yet, but check back soon!
 
-<a href="dashboard.php" class="btn">Go to Dashboard</a>
+<a href="/dashboard/" class="btn">Go to Dashboard</a>
 </body>
 </html>
