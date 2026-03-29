@@ -22,7 +22,7 @@
     </div>
 
     <footer class="dashboard-footer">
-        <a href="/" class="back-link"><- Return to Home</a>
+        <a href="/" class="btn">Return Home</a>
     </footer>
 </div>
 <script src="../assets/js/dashboard.js"></script>
