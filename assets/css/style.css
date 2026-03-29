@@ -15,6 +15,25 @@ body {
     min-height: 100vh;
 }
 
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8); /* Blue to Purple gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -1px;
+    background: linear-gradient(90deg, #38bdf8, #818cf8); /* Blue to Purple gradient */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 
 p {
@@ -53,16 +72,6 @@ p {
 .hero {
     text-align: center;
     padding: 2rem;
-}
-
-h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    letter-spacing: -1px;
-    background: linear-gradient(90deg, #38bdf8, #818cf8); /* Blue to Purple gradient */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* ==========================================
