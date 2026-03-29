@@ -19,12 +19,58 @@ button:hover {
     background: #0056b3;
 }
 
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.dashboard-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#greeting {
+    font-size: 1.8rem;
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(90deg, #38bdf8, #818cf8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
 #clock-widget {
     text-align: center;
     padding: 10px 0;
 }
 
 #current-time {
-    font-family: 'Courier New', Courier, monospace; /* Monospaced fonts stop the numbers from "jumping" as they change */
-    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #38bdf8;
+    margin: 10px 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#current-date {
+    color: #94a3b8;
+    font-size: 1.1rem;
+}
+
+.dashboard-footer {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.back-link {
+    color: #94a3b8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.back-link:hover {
+    color: #38bdf8;
 }

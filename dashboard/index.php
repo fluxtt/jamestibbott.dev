@@ -7,20 +7,25 @@
     <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
 <body>
-    <h1>Welcome to the Dashboard</h1>
-    <p>This is where you can manage your settings and view your data.</p>
+<div class="container">
+    <header class="dashboard-header">
+        <h2 id="greeting">...</h2>
+        <p>Welcome to your personal overview</p>
+    </header>
 
-<div class="card">
-    <h3>Local Time</h3>
-    <div id="clock-widget">
-        <p id="current-time" style="font-size: 2.5rem; font-weight: bold; color: #38bdf8; margin: 10px 0;">00:00:00</p>
-        <p id="current-date" style="color: #94a3b8; font-size: 1.1rem;">Loading date...</p>
+    <div class="grid">
+        <div class="card">
+            <div id="clock-widget">
+                <p id="current-time">00:00:00</p>
+                <p id="current-date">Loading date...</p>
+            </div>
+        </div>
     </div>
-</div>
-<footer>
-    <a href="/"><- Return to Home</a>
-</footer>
 
+    <footer class="dashboard-footer">
+        <a href="/" class="back-link"><- Return to Home</a>
+    </footer>
+</div>
 <script src="../assets/js/dashboard.js"></script>
 </body>
 </html>
