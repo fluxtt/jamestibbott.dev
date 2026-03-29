@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
 </head>
 <body>
     <h1>Welcome to the Dashboard</h1>
@@ -17,6 +17,10 @@
         <p id="current-date" style="color: #94a3b8; font-size: 1.1rem;">Loading date...</p>
     </div>
 </div>
+<footer>
+    <a href="/"><- Return to Home</a>
+</footer>
 
+<script src="../assets/js/dashboard.js"></script>
 </body>
 </html>
