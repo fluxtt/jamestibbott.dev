@@ -1,7 +1,7 @@
 body {
-    font-family: sans-serif;
-    background-color: #1a1a1a;
-    color: white;
+    font-family: 'Inter', -apple-system, sans-serif;
+    background-color: #0f172a; /* Deep Navy/Black */
+    color: #f8fafc;
     margin: 0;
     padding: 20px;
 }
@@ -17,4 +17,14 @@ button {
 
 button:hover {
     background: #0056b3;
+}
+
+#clock-widget {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#current-time {
+    font-family: 'Courier New', Courier, monospace; /* Monospaced fonts stop the numbers from "jumping" as they change */
+    letter-spacing: 2px;
 }
