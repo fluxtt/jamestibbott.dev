@@ -10,7 +10,6 @@
 <div class="container">
     <header class="dashboard-header">
         <h2 id="greeting">...</h2>
-        <p>Welcome to your personal overview</p>
     </header>
 
     <div class="grid">
