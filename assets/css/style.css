@@ -112,13 +112,6 @@ p {
     border: 1px solid #334155;
 }
 
-#greeting {
-    background: linear-gradient(90deg, #38bdf8, #818cf8);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 #clock-widget {
     text-align: center;
     padding: 10px 0;
