@@ -6,20 +6,26 @@ document.addEventListener("DOMContentLoaded", () => {
   const dayDisplay = document.getElementById("current-day");
 
   function updateGreeting() {
+    if (!greetingDisplay) return;
+
     const hour = new Date().getHours();
     let welcomeText = "";
 
-    if (hour < 12) welcomeText = "Good Morning";
-    else if (hour < 18) welcomeText = "Good Afternoon";
-    else welcomeText = "Good Evening";
+    if (hour < 12) {
+      welcomeText = "Good Morning";
+    } else if (hour < 18) {
+      welcomeText = "Good Afternoon";
+    } else {
+      welcomeText = "Good Evening";
+    }
 
-    if (greetingDisplay) greetingDisplay.innerText = welcomeText;
+    greetingDisplay.innerText = welcomeText;
   }
 
   function updateClock() {
     const now = new Date();
 
-    // 1. Time (Top Right) - e.g., 18:11
+    // Time (e.g., 19:07)
     if (timeDisplay) {
       timeDisplay.innerText = now.toLocaleTimeString("en-GB", {
         hour: "2-digit",
@@ -28,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // 2. Date (Top Left) - e.g., 2 April
+    // Date (e.g., 2 April)
     if (dateDisplay) {
       dateDisplay.innerText = now.toLocaleDateString("en-GB", {
         day: "numeric",
@@ -36,19 +42,18 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    // 3. Year (Bottom Left) - e.g., 2026
+    // Year (e.g., 2026)
     if (yearDisplay) {
       yearDisplay.innerText = now.getFullYear();
     }
 
-    // 4. Day (Bottom Right) - e.g., Thursday
+    // Day (e.g., Thursday)
     if (dayDisplay) {
       dayDisplay.innerText = now.toLocaleDateString("en-GB", {
         weekday: "long",
       });
     }
   }
-
   updateGreeting();
   updateClock();
 

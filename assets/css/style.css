@@ -155,20 +155,28 @@ p {
   display: block; /* Ensures they drop to the next line */
 }
 
-/* Bookmark Grid (3 Columns) */
-.bookmarks-grid > div:not(:last-child) {
-  border-right: 1px solid rgba(31, 41, 55, 0.5);
-  padding-right: 20px;
+.bookmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 30px;
+    width: 100%;
+    align-items: start;
+    text-align: left;
 }
 
 .category-title {
-  color: #fde047; /* The yellow accent */
-  font-size: 0.85rem;
-  margin-bottom: 12px;
+    color: #fde047;
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .bookmark-list {
-  list-style: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 .bookmark-list li {
