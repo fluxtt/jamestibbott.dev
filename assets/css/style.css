@@ -81,60 +81,96 @@ p {
 /* ==========================================
    3. DASHBOARD SPECIFIC
    ========================================== */
-.container {
+.dashboard-container {
     max-width: 1000px;
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px;
 }
 
-.dashboard-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-#greeting {
-    font-size: 1.8rem;
-    color: #f8fafc;
-    margin-bottom: 0.5rem;
-    background: linear-gradient(90deg, #38bdf8, #818cf8);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* Section Labels (e.g., CLOCK, SEARCH) */
+.section-label {
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: #4b5563; /* Darker gray muted look */
+    margin-bottom: 10px;
+    text-transform: uppercase;
     font-weight: 700;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-}
-
+/* The "Startpage" Card Look */
 .card {
-    background: #1e293b; /* Slightly lighter than body for contrast */
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid #334155;
+    background: #11141b; /* Darker to match the image */
+    border: 1px solid #1f2937;
+    border-radius: 6px;
+    padding: 20px 25px;
+    margin-bottom: 30px;
 }
 
-#clock-widget {
-    text-align: center;
-    padding: 10px 0;
+/* Clock Flex Layout */
+.clock-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#current-time {
-    font-size: 2.5rem;
-    font-weight: bold;
+/* Left side of clock */
+.clock-left {
+    text-align: left;
+}
+
+/* Right side of clock */
+.clock-right {
+    text-align: right;
+}
+
+/* Specific Clock Text Styling */
+#current-date, #current-time {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #f3f4f6;
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace; /* Keep it consistent */
+}
+
+#current-year, #current-day {
+    font-size: 0.85rem;
+    color: #4b5563;
+    display: block; /* Ensures they drop to the next line */
+}
+
+/* Bookmark Grid (3 Columns) */
+.bookmarks-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.category-title {
+    color: #fde047; /* The yellow accent */
+    font-size: 0.85rem;
+    margin-bottom: 12px;
+}
+
+.bookmark-list {
+    list-style: none;
+}
+
+.bookmark-list li {
+    margin-bottom: 8px;
+}
+
+.bookmark-list a {
+    color: #f3f4f6;
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.bookmark-list a:hover {
     color: #38bdf8;
-    margin: 10px 0;
-    font-family: 'Courier New', Courier, monospace;
 }
 
-#current-date {
-    color: #94a3b8;
-    font-size: 1.1rem;
-}
-
-.dashboard-footer {
-    margin-top: 3rem;
-    text-align: center;
+.arrow {
+    font-size: 0.7rem;
+    margin-left: 4px;
+    opacity: 0.7;
 }
