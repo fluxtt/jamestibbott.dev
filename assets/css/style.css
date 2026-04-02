@@ -2,215 +2,225 @@
    1. GLOBAL STYLES (Applies to every page)
    ========================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'JetBrains Mono', monospace;
-    background-color: #0d0f14;
-    color: #a0a0a0;
-    padding: 40px;
-    line-height: 1.6;
-    min-height: 100vh;
+  font-family: "JetBrains Mono", monospace;
+  background-color: #0d0f14;
+  color: #a0a0a0;
+  padding: 40px;
+  line-height: 1.6;
+  min-height: 100vh;
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    letter-spacing: -1px;
-    background: linear-gradient(90deg, #38bdf8, #818cf8); /* Blue to Purple gradient */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #818cf8
+  ); /* Blue to Purple gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    letter-spacing: -1px;
-    background: linear-gradient(90deg, #38bdf8, #818cf8); /* Blue to Purple gradient */
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: -1px;
+  background: linear-gradient(
+    90deg,
+    #38bdf8,
+    #818cf8
+  ); /* Blue to Purple gradient */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-
 p {
-    font-size: 1.1rem;
-    color: #94a3b8;
-    margin-bottom: 2.5rem;
+  font-size: 1.1rem;
+  color: #94a3b8;
+  margin-bottom: 2.5rem;
 }
 
 /* Shared Components (Buttons, Links) */
 .btn {
-    display: inline-block;
-    padding: 0.8rem 2rem;
-    background: rgba(255, 255, 255, 0.05);
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  background: rgba(255, 255, 255, 0.05);
+  color: #fff;
+  text-decoration: none;
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
 }
 
 .btn:hover {
-    background: #38bdf8;
-    color: #0f172a;
+  background: #38bdf8;
+  color: #0f172a;
 }
 
 /* ==========================================
    2. HOME PAGE SPECIFIC
    ========================================== */
 .home-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero {
-    text-align: center;
-    padding: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 /* ==========================================
    3. DASHBOARD SPECIFIC
    ========================================== */
 .dashboard-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
 }
 
 /* Section Labels (e.g., CLOCK, SEARCH) */
 .section-label {
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: #4b5563; /* Darker gray muted look */
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  color: #4b5563; /* Darker gray muted look */
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 /* The "Startpage" Card Look */
 .card {
-    background: #11141b; /* Darker to match the image */
-    border: 1px solid #1f2937;
-    border-radius: 6px;
-    padding: 20px 25px;
-    margin-bottom: 30px;
+  background: #11141b; /* Darker to match the image */
+  border: 1px solid #1f2937;
+  border-radius: 6px;
+  padding: 20px 25px;
+  margin-bottom: 30px;
 }
 
 /* Clock Flex Layout */
 .clock-flex {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
 }
+
 /* Left side of clock */
 .clock-left {
-    text-align: left;
+  text-align: left;
 }
 
 /* Right side of clock */
 .clock-right {
-    text-align: right;
+  text-align: right;
 }
 
 .sub-text {
-    display: block;
-    font-size: 0.8rem;
-    color: #4b5563;
-    margin-top: 4px;
+  display: block;
+  font-size: 0.8rem;
+  color: #4b5563;
+  margin-top: 4px;
 }
 
 /* Specific Clock Text Styling */
-#current-date, #current-time {
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #f3f4f6;
-    margin: 0;
-    font-family: 'JetBrains Mono', monospace; /* Keep it consistent */
+#current-date,
+#current-time {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #f3f4f6;
+  margin: 0;
+  font-family: "JetBrains Mono", monospace; /* Keep it consistent */
 }
 
-#current-year, #current-day {
-    font-size: 0.85rem;
-    color: #4b5563;
-    display: block; /* Ensures they drop to the next line */
+#current-year,
+#current-day {
+  font-size: 0.85rem;
+  color: #4b5563;
+  display: block; /* Ensures they drop to the next line */
 }
 
 /* Bookmark Grid (3 Columns) */
 .bookmarks-grid > div:not(:last-child) {
-    border-right: 1px solid rgba(31, 41, 55, 0.5);
-    padding-right: 20px;
+  border-right: 1px solid rgba(31, 41, 55, 0.5);
+  padding-right: 20px;
 }
 
 .category-title {
-    color: #fde047; /* The yellow accent */
-    font-size: 0.85rem;
-    margin-bottom: 12px;
+  color: #fde047; /* The yellow accent */
+  font-size: 0.85rem;
+  margin-bottom: 12px;
 }
 
 .bookmark-list {
-    list-style: none;
+  list-style: none;
 }
 
 .bookmark-list li {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .bookmark-list a {
-    color: #f3f4f6;
-    text-decoration: none;
-    font-size: 0.85rem;
+  color: #f3f4f6;
+  text-decoration: none;
+  font-size: 0.85rem;
 }
 
 .bookmark-list a:hover {
-    color: #38bdf8;
+  color: #38bdf8;
 }
 
 .arrow {
-    font-size: 0.7rem;
-    margin-left: 4px;
-    opacity: 0.7;
+  font-size: 0.7rem;
+  margin-left: 4px;
+  opacity: 0.7;
 }
 
 .search-card {
-    padding: 12px 20px !important; /* Thinner than other cards */
+  padding: 12px 20px !important; /* Thinner than other cards */
 }
 
 .search-wrapper {
-    display: flex;
-    align-items: center;
-    gap: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .search-icon {
-    font-size: 0.9rem;
-    opacity: 0.5;
+  font-size: 0.9rem;
+  opacity: 0.5;
 }
 
 .search-input {
-    background: transparent;
-    border: none;
-    color: #f3f4f6;
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 0.9rem;
-    flex-grow: 1;
-    outline: none;
+  background: transparent;
+  border: none;
+  color: #f3f4f6;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 0.9rem;
+  flex-grow: 1;
+  outline: none;
 }
 
 .search-shortcut {
-    background: #1a1d24;
-    border: 1px solid #1f2937;
-    padding: 2px 8px;
-    border-radius: 4px;
-    font-size: 0.7rem;
-    color: #4b5563;
+  background: #1a1d24;
+  border: 1px solid #1f2937;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  color: #4b5563;
 }
