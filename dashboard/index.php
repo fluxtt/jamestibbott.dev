@@ -23,9 +23,13 @@
         </div>
 
         <p class="section-label">Search</p>
-        <div class="card" style="padding: 15px 25px;">
-            <p style="color: #4b5563;">Type here to search...</p>
-        </div>
+            <div class="card search-card">
+                <div class="search-wrapper">
+                    <span class="search-icon">🔍</span>
+                    <input type="text" placeholder="Type here to search..." class="search-input">
+                    <span class="search-shortcut">S</span>
+                </div>
+            </div>
 
         <p class="section-label">Bookmarks</p>
         <div class="card">

@@ -82,9 +82,9 @@ p {
    3. DASHBOARD SPECIFIC
    ========================================== */
 .dashboard-container {
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 /* Section Labels (e.g., CLOCK, SEARCH) */
@@ -109,10 +109,10 @@ p {
 /* Clock Flex Layout */
 .clock-flex {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; 
+    align-items: flex-start;
+    width: 100%;
 }
-
 /* Left side of clock */
 .clock-left {
     text-align: left;
@@ -121,6 +121,13 @@ p {
 /* Right side of clock */
 .clock-right {
     text-align: right;
+}
+
+.sub-text {
+    display: block;
+    font-size: 0.8rem;
+    color: #4b5563;
+    margin-top: 4px;
 }
 
 /* Specific Clock Text Styling */
@@ -139,10 +146,9 @@ p {
 }
 
 /* Bookmark Grid (3 Columns) */
-.bookmarks-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+.bookmarks-grid > div:not(:last-child) {
+    border-right: 1px solid rgba(31, 41, 55, 0.5);
+    padding-right: 20px;
 }
 
 .category-title {
@@ -173,4 +179,38 @@ p {
     font-size: 0.7rem;
     margin-left: 4px;
     opacity: 0.7;
+}
+
+.search-card {
+    padding: 12px 20px !important; /* Thinner than other cards */
+}
+
+.search-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-icon {
+    font-size: 0.9rem;
+    opacity: 0.5;
+}
+
+.search-input {
+    background: transparent;
+    border: none;
+    color: #f3f4f6;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.9rem;
+    flex-grow: 1;
+    outline: none;
+}
+
+.search-shortcut {
+    background: #1a1d24;
+    border: 1px solid #1f2937;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    color: #4b5563;
 }
