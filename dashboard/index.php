@@ -39,20 +39,23 @@
             <div>
                 <p class="category-title">AI</p>
                 <ul class="bookmark-list">
-                    <li><a href="#">Copilot ↗</a></li>
-                    <li><a href="#">ChatGPT ↗</a></li>
+                    <li><a href="https://copilot.microsoft.com/">Copilot ↗</a></li>
+                    <li><a href="https://gemini.google.com/app">Gemini ↗</a></li>
+                    <li><a href="https://chatgpt.com/">ChatGPT ↗</a></li>
+
                 </ul>
             </div>
             <div>
                 <p class="category-title">Dev</p>
                 <ul class="bookmark-list">
-                    <li><a href="#">GitHub ↗</a></li>
+                    <li><a href="https://github.com/fluxtt">GitHub ↗</a></li>
                 </ul>
             </div>
             <div>
                 <p class="category-title">Productivity</p>
                 <ul class="bookmark-list">
-                    <li><a href="#">Pomofocus ↗</a></li>
+                    <li><a href="https://loop.cloud.microsoft/">Loop ↗</a></li>
+                    <li><a href="https://pomofocus.io/">Pomofocus ↗</a></li>
                 </ul>
             </div>
         </div>
